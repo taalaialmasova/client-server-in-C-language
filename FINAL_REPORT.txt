@@ -1,0 +1,14 @@
+Bu projede biz iki tane program yazdik server ile client.
+Ikisinin baglatisin socket uzerinde kurduk.
+
+Client -> clients <#of columns of A, m> <#of rows of A, p> <#of clients, q>
+			yukaridaki gibi calistirmamiz lazim. Client'in sayisi kadar ben servere baglanarak baglanti kurup, 
+			olusturdugum socket uzerinden bilgi alis verisi yaptim.
+			Bir tane log dosya olusturup onun icine de matriz, ortalama vakti, standart sapmayi hesaplayip yazdim.
+
+			"Usage: ./Client PortId rowSize columnSize sizeOFclients\n"
+
+Server ->   Burda her clienttan istek gonderildiginde ayni porttan gonderiyorsa , thread olusturp onun icinde islemleri yapiyorum.
+			theadhelper fonksiyonu ile 3 tane proccess olusturup, her process icinde farkli islem yapacak, ama ben sadece matrixi olusturdum.
+			"Usage: ./server portID thpoolSize\n"
+
